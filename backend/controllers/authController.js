@@ -291,7 +291,7 @@ const googleCallback = async (req, res) => {
 
   try {
     if (!code) {
-      return res.redirect(`${process.env.FRONTEND_URL || 'http://localhost:5173'}/login?error=Google auth failed: missing code`);
+      return res.redirect(`${process.env.FRONTEND_URL || 'https://lets-cook-1.onrender.com'}/login?error=Google auth failed: missing code`);
     }
 
     const googleUser = await googleAuthService.getUserInfoFromCode(code);
@@ -321,10 +321,10 @@ const googleCallback = async (req, res) => {
     generateToken(res, user._id);
 
     // Redirect to frontend dashboard or home
-    res.redirect(`${process.env.FRONTEND_URL || 'http://localhost:5173'}/dashboard`);
+    res.redirect(`${process.env.FRONTEND_URL || 'https://lets-cook-1.onrender.com'}/dashboard`);
   } catch (error) {
     console.error('Google callback error:', error);
-    res.redirect(`${process.env.FRONTEND_URL || 'http://localhost:5173'}/login?error=Google authentication failed`);
+    res.redirect(`${process.env.FRONTEND_URL || 'https://lets-cook-1.onrender.com'}/login?error=Google authentication failed`);
   }
 };
 
