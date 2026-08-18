@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api/auth';
+const API_BASE_URL = 'https://lets-cook-k9ye.onrender.com/api/auth';
 
 /**
  * Helper to process response and throw errors if response is not ok
