@@ -53,7 +53,7 @@ const LoginForm = () => {
 
   const handleGoogleLogin = () => {
     // Simply redirect to backend OAuth entry endpoint
-    window.location.href = 'http://localhost:5000/api/auth/google';
+    window.location.href = 'https://lets-cook-k9ye.onrender.com/api/auth/google';
   };
 
   return (
