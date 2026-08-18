@@ -1,7 +1,7 @@
 // Base URL of the backend API. Falls back to the local dev server if no
 // VITE_API_URL env var is set — mirrors the convention already used by
 // authController's FRONTEND_URL fallback on the backend.
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://lets-cook-k9ye.onrender.com';
 
 /**
  * Shared fetch wrapper: sends the HttpOnly JWT cookie automatically
